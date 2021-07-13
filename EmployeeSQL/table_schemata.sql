@@ -14,11 +14,11 @@ CREATE TABLE titles (
 CREATE TABLE employees (
 	emp_no int PRIMARY KEY NOT NULL, 
 	emp_title_id varchar(25) NOT NULL,
-	birth_date DATE, 
+	birth_date varchar(25), 
 	first_name varchar(25) NOT NULL,
 	last_name varchar(25) NOT NULL,
 	sex varchar(3),
-	hire_date DATE,
+	hire_date varchar(25),
 	FOREIGN KEY (emp_title_id) REFERENCES titles (title_id)
 );
 
